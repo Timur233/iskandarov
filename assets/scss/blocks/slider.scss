@@ -1,0 +1,55 @@
+.main-slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100vh; 
+    background-size: cover;
+    background-position: center;
+    background: radial-gradient(#e2e5e8, #909193);
+
+    &__content {
+        margin-top: auto;
+        margin-bottom: spacer(15);
+    }
+
+    @media (max-width: 830px) {
+        height: 90vh;
+    }
+}
+
+.slider-content {
+    position: relative;
+    width: 100%;
+    z-index: 15;
+
+    &__title {
+        font-size: 44px;
+        line-height: 65px;
+        font-weight: 200;
+        color: $white;
+    }
+}
+
+.human-promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: spacer(20) 0;
+
+    &__title {
+        max-width: 100%;
+        margin-bottom: spacer(7);
+    }
+
+    &__knife {
+        max-width: 415px;
+        transform: rotate(-80deg);
+        margin-right: 6rem; //Pleace fix it!!!
+    }
+
+    &__author {
+        margin-top: auto;
+        font-weight: 300;
+    }
+}
