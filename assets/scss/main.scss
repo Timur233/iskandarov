@@ -3,13 +3,19 @@
 @import "font.scss";
 @import "mixins.scss";
 @import "default.scss";
+
 @import "elements/grid.scss";
 @import "elements/buttons.scss";
 @import "elements/forms.scss";
 @import "elements/modal.scss";
+@import "elements/titles.scss";
+ 
+@import "blocks/slider.scss";
+@import "blocks/preview.scss";
+
+
 @import "blocks/mobile_menu.scss";
 @import "blocks/header.scss";
-@import "blocks/slider.scss";
 @import "blocks/about_project.scss";
 @import "blocks/gallery.scss";
 @import "blocks/advantages.scss";

@@ -1,7 +1,7 @@
 body {
     overflow-x: hidden;
     font-family: 'Circe';
-    font-size: 18px;
+    font-size: 22px;
     line-height: 1.4;
     color: $text;
 
@@ -11,14 +11,16 @@ body {
 } 
 
 .section {
-    padding: spacer(24) 0;
-
-    &--gray {
-        background-color: $bg-gray;
-    }
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100vh; 
+    background-size: cover;
+    background-position: center;
+    background: radial-gradient(#e2e5e8, #909193);
 
     @media (max-width: 830px) {
-        padding: spacer(12) 0;
+        height: 90vh; 
     }
 }
 

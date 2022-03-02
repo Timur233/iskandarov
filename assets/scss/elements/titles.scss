@@ -1,0 +1,33 @@
+.title-ribbon {
+    width: 80%;
+    position: relative;
+    padding: spacer(5) 0;
+    margin-bottom: spacer(20);
+    font-size: 22px;
+    line-height: 1.2; 
+
+    & * {
+        margin: 0;
+    }
+
+    &__bg {
+        position: absolute;
+        left: -1000px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background: #ffde5f;
+        z-index: -1;
+    }
+
+    &__shadow {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 100px;
+        transform: translate(80%, 15%);
+        background: #898989;
+        z-index: -5;
+    }
+}
