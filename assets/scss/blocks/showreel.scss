@@ -1,5 +1,6 @@
-.preview-content {
+.showreel-content {
     position: relative;
+    flex: 0 0 100%;
     width: 100%;
     z-index: 15;
 
@@ -8,10 +9,5 @@
         line-height: 65px;
         font-weight: 200;
         color: $white;
-    }
-
-    &__text {
-        max-width: 800px;
-        margin: auto;
     }
 }
