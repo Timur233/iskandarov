@@ -26,6 +26,17 @@ body {
     &--beige {
         background: #f7f5ee;
     }
+
+    &__content {
+        position: relative;
+        width: 100%;
+        z-index: 15;
+    }
+
+    &__text {
+        max-width: 800px;
+        margin: auto;
+    }
 }
 
 .section-title {

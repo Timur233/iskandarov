@@ -1,0 +1,20 @@
+.idea {
+    &__content {
+        margin-top: -150px;
+        font-weight: 600;
+
+        & > p:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__image-block {
+        position: relative;
+    }
+
+    &__image {
+        position: absolute;
+        right: 20px;
+        bottom: 0px;
+    }
+}

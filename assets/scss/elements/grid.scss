@@ -47,6 +47,26 @@
         width: calc(calc(100%/12)*2);
     }
 
+    &__1-4 {
+        flex: 0 0 auto;
+        width: calc(100%/4);
+    }
+
+    &__3-4 {
+        flex: 0 0 auto;
+        width: calc(calc(100%/4) * 3);
+    }
+
+    &__2-5 {
+        flex: 0 0 auto;
+        width: calc(calc(100%/5)*2);
+    }
+
+    &__3-5 {
+        flex: 0 0 auto;
+        width: calc(calc(100%/5) * 3);
+    }
+
     &--v-center {
         align-items: center;
     }

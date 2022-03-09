@@ -25,8 +25,8 @@
         top: 0;
         bottom: 0;
         right: 0;
-        width: 100px;
-        transform: translate(80%, 15%);
+        width: 50px;
+        transform: translate(70%, 15%);
         background: #898989;
         z-index: -5;
     }
@@ -34,6 +34,8 @@
     &__title {
         position: relative;
         z-index: 1;
+        font-size: 44px;
+        line-height: 1;
     }
 
     &--short {

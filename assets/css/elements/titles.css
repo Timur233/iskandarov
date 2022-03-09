@@ -20,13 +20,15 @@
     top: 0;
     bottom: 0;
     right: 0;
-    width: 100px;
-    transform: translate(80%, 15%);
+    width: 50px;
+    transform: translate(70%, 15%);
     background: #898989;
     z-index: -5; }
   .title-ribbon__title {
     position: relative;
-    z-index: 1; }
+    z-index: 1;
+    font-size: 44px;
+    line-height: 1; }
   .title-ribbon--short {
     width: auto;
     display: inline-block;
