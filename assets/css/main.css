@@ -109,13 +109,13 @@ body {
       height: 90vh; } }
   .section--beige {
     background: #f7f5ee; }
+  .section--dark {
+    background: #202020;
+    color: #fff; }
   .section__content {
     position: relative;
     width: 100%;
     z-index: 15; }
-  .section__text {
-    max-width: 800px;
-    margin: auto; }
 
 .section-title {
   display: flex;
@@ -349,6 +349,7 @@ body {
     position: relative;
     z-index: 1;
     font-size: 44px;
+    text-transform: uppercase;
     line-height: 1; }
   .title-ribbon--short {
     width: auto;
@@ -423,6 +424,9 @@ body {
   position: absolute;
   right: 20px;
   bottom: 0px; }
+
+.scenarion__title {
+  color: #333; }
 
 .sidebar {
   transform: translateX(-100%);

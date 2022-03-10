@@ -27,15 +27,15 @@ body {
         background: #f7f5ee;
     }
 
+    &--dark {
+        background: #202020;
+        color: #fff;
+    }
+
     &__content {
         position: relative;
         width: 100%;
         z-index: 15;
-    }
-
-    &__text {
-        max-width: 800px;
-        margin: auto;
     }
 }
 
