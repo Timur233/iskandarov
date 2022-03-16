@@ -26,6 +26,8 @@
 
     {{ include('widgets/storyboard.twig') }}
 
+    {{ include('widgets/creatives.twig') }}
+
   </body>
 
   <script src="assets/js/swiper.min.js"></script>
@@ -35,6 +37,22 @@
     type="text/javascript"
   ></script>
   <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+
+  <script>
+    var galery = new Swiper('.creatives-carousel', {
+          loop: false,
+          slidesPerView: 2,
+          initialSlide: 0,
+          keyboardControl: true,
+          mousewheelControl: true,
+          autoHeight: true,
+          spaceBetween: 20,
+          navigation: {
+            nextEl: ".swiper-button-next.main-gallery__controll",
+            prevEl: ".swiper-button-prev.main-gallery__controll",
+        }
+        })
+  </script>
 
   {# <script>
 

@@ -1,0 +1,35 @@
+.creatives {
+
+}
+
+.creatives-carousel {
+    overflow: visible;
+
+    &__item {
+        overflow: hidden;
+        border-radius: 8px;
+    }
+
+    &__item.swiper-slide-active > .creatives-carousel__link::before {
+        opacity: 0;
+    }
+
+    &__link {
+        &::before {
+            content: '';
+            position: absolute;
+            opacity: 1;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 6;
+            transition: opacity $slow-animation;
+            background: rgba(247, 245, 238, .6)
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+}

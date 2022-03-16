@@ -1,0 +1,10 @@
+.story-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 spacer(2); }
+  .story-item__preview {
+    width: 100%;
+    margin-bottom: spacer(4); }
+  .story-item__result {
+    width: 100%; }
