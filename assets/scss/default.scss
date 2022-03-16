@@ -32,6 +32,11 @@ body {
         color: #fff;
     }
 
+    &--auto-height {
+        height: auto;
+        padding: 80px 0;
+    }
+
     &__content {
         position: relative;
         width: 100%;
