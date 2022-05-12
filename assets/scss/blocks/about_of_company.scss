@@ -1,0 +1,13 @@
+.about-of-company {
+    & .title-ribbon__title {
+        color: $text;
+    }
+
+    & span[style="text-decoration: line-through;"] {
+        background: #fff;
+        color: #333;
+        padding: 0 10px;
+        line-height: 1;
+        user-select: none;
+    }
+}

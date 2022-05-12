@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="assets/css/swiper.min.css" />
     <link rel="stylesheet" href="assets/css/main.css?v=6">
     <link href="https://vjs.zencdn.net/7.17.0/video-js.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/css/green-audio-player.min.css">
   
   </head>
   <body>
@@ -28,6 +29,12 @@
 
     {{ include('widgets/creatives.twig') }}
 
+    {{ include('widgets/divine_signal.twig') }}
+
+    {{ include('widgets/about_of_company.twig') }}
+
+    {{ include('widgets/graduation_project.twig') }}
+
   </body>
 
   <script src="assets/js/swiper.min.js"></script>
@@ -37,21 +44,93 @@
     type="text/javascript"
   ></script>
   <script src="https://vjs.zencdn.net/7.17.0/video.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/greghub/green-audio-player/dist/js/green-audio-player.min.js"></script>
 
   <script>
-    var galery = new Swiper('.creatives-carousel', {
-          loop: false,
-          slidesPerView: 2,
-          initialSlide: 0,
-          keyboardControl: true,
-          mousewheelControl: true,
-          autoHeight: true,
-          spaceBetween: 20,
-          navigation: {
-            nextEl: ".swiper-button-next.main-gallery__controll",
-            prevEl: ".swiper-button-prev.main-gallery__controll",
+    const galery = new Swiper('.creatives-carousel', {
+      loop: false,
+      slidesPerView: 2,
+      initialSlide: 0,
+      keyboardControl: true,
+      mousewheelControl: true,
+      autoHeight: true,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: ".swiper-button-next.main-gallery__controll",
+        prevEl: ".swiper-button-prev.main-gallery__controll",
+      }
+    });
+
+    const galeryAboutProject = new Swiper('.about-project-carousel', {
+      loop: false,
+      slidesPerView: "auto",
+      initialSlide: 0,
+      keyboardControl: true,
+      mousewheelControl: true,
+      autoHeight: true,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: ".swiper-button-next.about-project__controll",
+        prevEl: ".swiper-button-prev.about-project__controll",
+      }
+    });
+
+    new GreenAudioPlayer('.divine-signal__audio-block');
+
+    const elements = document.querySelectorAll('.vertical-slide');
+    const slides = [];
+
+    let selectedItem = null;
+    let scrollTop = window.scrollY;
+    let scrollArrow = null;
+    let enableScroll = true;
+    let scrollStart = null;
+
+    const scrollToFn = () => {
+        const nextSlide = slides[selectedItem + scrollArrow];
+        const difference = (window.scrollY - scrollStart) * scrollArrow;
+        
+        if (nextSlide && enableScroll && difference >= 50) {
+            enableScroll = false;
+            selectedItem = nextSlide.id;
+            scrollStart = nextSlide.top;
+            window.scrollTo({
+                top: nextSlide.top,
+                behavior: "smooth"
+            });
+            enableScroll = true;
         }
-        })
+    };
+
+    Array.from(elements).forEach((item, index) => {
+        slides.push({
+            id:     index,
+            top:    item.offsetTop,
+            bottom: item.offsetTop + item.offsetHeight
+        });
+
+        if (
+            window.scrollY >= item.offsetTop &&
+            window.scrollY <= item.offsetTop + item.offsetHeight
+          )
+        {
+            selectedItem = index;
+        }
+    });
+
+    scrollStart = slides[selectedItem].top;
+
+    window.onscroll = () => {
+        if (window.scrollY >= scrollTop) {
+            scrollArrow = 1;
+        } else {
+            scrollArrow = -1;
+        }
+
+        scrollTop = window.scrollY;
+        scrollToFn();
+    }
+
   </script>
 
   {# <script>

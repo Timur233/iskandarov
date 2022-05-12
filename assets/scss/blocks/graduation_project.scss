@@ -1,0 +1,97 @@
+.my-project {
+    &__content {
+        width: 100%;
+    }
+
+    &__sub-title {
+        color: #ffde5f;
+        text-align: center;
+        margin-bottom: spacer(10);
+        font-size: 44px;
+        font-weight: 600;
+    }
+
+    &__afisha {
+        text-align: center;
+        position: relative;
+
+        & > img {
+            display: inline-block;
+        } 
+    }
+
+    &__title-en {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translate(-27%, -50%);
+        font-size: 84px;
+        line-height: 1.2;
+        font-family: 'Bebas Neue', cursive;
+        color: #ffde5f;
+    }
+
+    &__title-year {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(-20%, -50%);
+        font-size: 84px;
+        line-height: 1.2;
+        font-family: 'Bebas Neue', cursive;
+        color: $white;
+    }
+
+    &__description {
+        text-align: center;
+        padding: spacer(15) spacer(5) spacer(0) spacer(5);
+        text-align: center;
+    }
+
+    &__film {
+        padding: spacer(15) spacer(5) spacer(0) spacer(5);
+    }
+}
+
+#graduation-project {
+    & .title-ribbon__title {
+        color: #333;
+    }
+
+    & .title-ribbon {
+        margin-bottom: spacer(12);
+    }
+}
+
+.about-project-carousel {
+    overflow: visible;
+
+    &__item {
+        overflow: hidden;
+        border-radius: 8px;
+        width: auto;
+    }
+
+    &__item.swiper-slide-active > .about-project-carousel__link::before {
+        opacity: 0;
+    }
+
+    &__link {
+        &::before {
+            content: '';
+            position: absolute;
+            opacity: 1;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 6;
+            transition: opacity $slow-animation;
+            background: rgba(247, 245, 238, .6)
+        }
+    }
+
+    &__img {
+        height: 310px;
+    }
+}

@@ -1,0 +1,44 @@
+.divine-signal {
+    padding-bottom: 0px;
+
+    &__content {
+        text-align: center;
+        font-size: 20px;
+
+        &--left {
+            flex: 0 0 70%;
+            font-weight: 600;
+            text-align: left;
+            color: #f1ca36;
+        }
+
+        &--right {
+            flex: 0 0 30%;
+
+            & img {
+                display: block;
+            }
+        }
+
+        &--copyright {
+            font-size: 16px;
+            clear: #f23838;
+        }
+    }
+
+    &__content-footer {
+        display: flex;
+        align-items: center;
+    }
+
+    &__audio-block {
+        margin: spacer(8) 0;
+    }
+}
+
+.divine-signal__audio-block.green-audio-player {width: 100%;}
+.divine-signal__audio-block.green-audio-player .slider .gap-progress .pin {background: #202020;}
+.divine-signal__audio-block .green-audio-player .volume .volume__button.open path {fill: #ffde5f !important;}
+.green-audio-player img, .green-audio-player svg {height: 18px !important;}
+.green-audio-player .slider .gap-progress {background-color: #f1ca36 !important;}
+.green-audio-player .volume .volume__button.open path {fill: #f1ca36 !important;}

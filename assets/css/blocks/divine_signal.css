@@ -1,0 +1,40 @@
+.divine-signal {
+  padding-bottom: 0px; }
+  .divine-signal__content {
+    text-align: center;
+    font-size: 20px; }
+    .divine-signal__content--left {
+      flex: 0 0 70%;
+      font-weight: 600;
+      text-align: left;
+      color: #f1ca36; }
+    .divine-signal__content--right {
+      flex: 0 0 30%; }
+      .divine-signal__content--right img {
+        display: block; }
+    .divine-signal__content--copyright {
+      font-size: 16px;
+      clear: #f23838; }
+  .divine-signal__content-footer {
+    display: flex;
+    align-items: center; }
+  .divine-signal__audio-block {
+    margin: spacer(8) 0; }
+
+.divine-signal__audio-block.green-audio-player {
+  width: 100%; }
+
+.divine-signal__audio-block.green-audio-player .slider .gap-progress .pin {
+  background: #202020; }
+
+.divine-signal__audio-block .green-audio-player .volume .volume__button.open path {
+  fill: #ffde5f !important; }
+
+.green-audio-player img, .green-audio-player svg {
+  height: 18px !important; }
+
+.green-audio-player .slider .gap-progress {
+  background-color: #f1ca36 !important; }
+
+.green-audio-player .volume .volume__button.open path {
+  fill: #f1ca36 !important; }

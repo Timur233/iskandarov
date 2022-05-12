@@ -1,0 +1,39 @@
+.my-project__content {
+  width: 100%; }
+
+.my-project__sub-title {
+  color: #ffde5f;
+  text-align: center;
+  margin-bottom: spacer(10);
+  font-size: 44px;
+  font-weight: 300; }
+
+.my-project__afisha {
+  text-align: center;
+  position: relative; }
+  .my-project__afisha > img {
+    display: inline-block; }
+
+.my-project__title-en {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-27%, -50%);
+  font-size: 64px;
+  font-weight: 300;
+  color: #ffde5f; }
+
+.my-project__title-year {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-27%, -50%);
+  font-size: 64px;
+  font-weight: 300;
+  color: #ffde5f; }
+
+#graduation-project .title-ribbon__title {
+  color: #333; }
+
+#graduation-project .title-ribbon {
+  margin-bottom: spacer(12); }

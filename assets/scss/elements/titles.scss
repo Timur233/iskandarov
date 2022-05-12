@@ -29,6 +29,12 @@
         transform: translate(70%, 15%);
         background: #898989;
         z-index: -5;
+
+        &--left {
+            left: 0;
+            right: auto;
+            transform: translate(-70%, 15%);
+        }
     }
 
     &__title {
@@ -43,5 +49,34 @@
         width: auto;
         display: inline-block;
         padding-left: 0px;
+    }
+
+    &--right {
+        padding-left: spacer(5);
+
+        & > .title-ribbon__shadow {
+            right: auto;
+            left: 0;
+            transform: translate(-70%, 15%);
+        }
+
+        & > .title-ribbon__bg {
+            left: 0;
+            right: -1000px;
+        }
+    }
+
+    &--center {
+        padding-left: spacer(5);
+        padding-right: spacer(5);
+        width: 100%;
+        // margin-left: 5%;
+        // margin-right: 5%;
+        text-align: center;
+
+        & > .title-ribbon__bg {
+            left: 0;
+            right: 0;
+        }
     }
 }
