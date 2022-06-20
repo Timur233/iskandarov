@@ -46,3 +46,5 @@ tests/_support/_generated
 Makefile
 
 /docker/
+
+/admin
