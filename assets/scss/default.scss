@@ -5,6 +5,10 @@ body {
     line-height: 1.4;
     color: $text;
 
+    @media (max-width: 900px) {
+        font-size: 18px;
+    }
+
     @media (max-width: 376px) {
         font-size: 16px;
     }
@@ -19,8 +23,9 @@ body {
     background-position: center;
     background: radial-gradient(#e2e5e8, #909193);
 
-    @media (max-width: 830px) {
-        height: 90vh; 
+    @media (max-width: 900px) {
+        height: auto;
+        padding: 80px 0;
     }
 
     &--beige {

@@ -1,5 +1,7 @@
 .creatives {
-
+    @media (max-width: 512px) {
+        padding-bottom: 0;
+    }
 }
 
 .creatives-carousel {

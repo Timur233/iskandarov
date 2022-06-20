@@ -3,6 +3,10 @@
         margin-top: auto;
         margin-bottom: spacer(15);
     }
+
+    @media (max-width: 768px) {
+        border-bottom: 1px solid rgba(0, 0, 0, .10);
+    }
 }
 
 .slider-content {
@@ -25,19 +29,45 @@
     height: 100%;
     padding: spacer(20) 0;
 
+    @media (max-width: 512px) {
+        padding: spacer(4) 0;
+    }
+
     &__title {
         max-width: 100%;
         margin-bottom: spacer(7);
+
+        @media (max-width: 900px) {
+            max-width: 400px;
+        }
     }
 
     &__knife {
         max-width: 415px;
         transform: rotate(-80deg);
         margin-right: 6rem; //Pleace fix it!!!
+
+        @media (max-width: 900px) {
+            max-width: 300px;
+        }
+        
+        @media (max-width: 512px) {
+            max-width: 268px;
+            margin-right: 4.5rem;
+            margin-bottom: 20px;
+        }
     }
 
     &__author {
         margin-top: auto;
         font-weight: 300;
+
+        @media (max-width: 900px) {
+            font-size: 24px;
+        }
+        
+        @media (max-width: 512px) {
+            font-size: 22px;
+        }
     }
 }

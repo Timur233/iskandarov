@@ -1,0 +1,11 @@
+.main-footer {
+  border-top: 3px solid #202020;
+  padding: 80px 0;
+  background: #f7f5ee; }
+  .main-footer__title {
+    position: relative;
+    z-index: 1;
+    font-size: 72px;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center; }

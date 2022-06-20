@@ -14,5 +14,19 @@
     &__video {
         width: 100%;
         height: 500px;
+
+        @media (max-width: 900px) {
+            height: 415px;
+        }
+        
+        @media (max-width: 512px) {
+            height: 260px;
+        }
+    }
+}
+
+.section.showreel {
+    @media (max-width: 768px) {
+        border-bottom: 1px solid rgba(0, 0, 0, .10);
     }
 }

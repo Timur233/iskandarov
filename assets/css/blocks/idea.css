@@ -1,0 +1,34 @@
+.idea__content {
+  margin-top: -150px;
+  font-weight: 600; }
+  .idea__content > p:last-child {
+    margin-bottom: 0; }
+  @media (max-width: 900px) {
+    .idea__content {
+      margin-top: 0px; } }
+  @media (max-width: 512px) {
+    .idea__content {
+      font-weight: 500; } }
+
+.idea__image-block {
+  position: relative; }
+  @media (max-width: 900px) {
+    .idea__image-block {
+      width: 100%;
+      flex: 0 0 100%;
+      margin-bottom: 40px; } }
+
+@media (max-width: 900px) {
+  .idea__text-block {
+    width: 100%;
+    flex: 0 0 100%; } }
+
+.idea__image {
+  position: absolute;
+  right: 20px;
+  bottom: 0px; }
+  @media (max-width: 900px) {
+    .idea__image {
+      position: relative;
+      right: auto;
+      width: 100%; } }

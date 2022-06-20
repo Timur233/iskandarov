@@ -7,4 +7,12 @@
     position: absolute;
     left: 50%;
     top: -124px;
+
+    @media (max-width: 900px) {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        margin-bottom: 40px;
+    }
 }

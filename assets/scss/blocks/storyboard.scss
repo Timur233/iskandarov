@@ -1,3 +1,10 @@
+.storyboard {
+
+    @media (max-width: 512px) {
+        padding-bottom: 0;
+    }
+}
+
 .story-item{
     display: flex;
     flex-direction: column;
@@ -7,9 +14,24 @@
     &__preview {
         width: 100%;
         margin-bottom: spacer(4);
+
+        @media (max-width: 512px) {
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: spacer(2);
+        }
     }
 
     &__result {
         width: 100%
+    }
+
+    @media (max-width: 512px) {
+        width: 100%;
+
+        &:not(:last-child) {
+            margin-bottom: spacer(10);
+        }        
     }
 }

@@ -17,6 +17,7 @@
 
         & > img {
             display: inline-block;
+            max-width: 100%;
         } 
     }
 
@@ -29,6 +30,14 @@
         line-height: 1.2;
         font-family: 'Bebas Neue', cursive;
         color: #ffde5f;
+
+        @media (max-width: 768px) {
+            transform: translate(20px, -50%);
+        }
+
+        @media (max-width: 512px) {
+            font-size: 56px;
+        }
     }
 
     &__title-year {
@@ -40,16 +49,29 @@
         line-height: 1.2;
         font-family: 'Bebas Neue', cursive;
         color: $white;
+
+        @media (max-width: 512px) {
+            transform: translate(-20px, -50%);
+            font-size: 56px;
+        }
     }
 
     &__description {
         text-align: center;
         padding: spacer(15) spacer(5) spacer(0) spacer(5);
         text-align: center;
+
+        @media (max-width: 512px) {
+            padding: spacer(15) spacer(0) spacer(0) spacer(0);
+        }
     }
 
     &__film {
         padding: spacer(15) spacer(5) spacer(0) spacer(5);
+
+        @media (max-width: 512px) {
+            padding: spacer(15) spacer(0) spacer(0) spacer(0);
+        }
     }
 }
 
@@ -93,5 +115,9 @@
 
     &__img {
         height: 310px;
+
+        @media (max-width: 512px) {
+            height: 240px;
+        }
     }
 }

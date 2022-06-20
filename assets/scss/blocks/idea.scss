@@ -6,15 +6,42 @@
         & > p:last-child {
             margin-bottom: 0;
         }
+
+        @media (max-width: 900px) {
+            margin-top: 0px;
+        }
+        
+        @media (max-width: 512px) {
+            font-weight: 500;
+        }
     }
 
     &__image-block {
         position: relative;
+
+        @media (max-width: 900px) {
+            width: 100%;
+            flex: 0 0 100%;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__text-block {
+        @media (max-width: 900px) {
+            width: 100%;
+            flex: 0 0 100%;
+        }
     }
 
     &__image {
         position: absolute;
         right: 20px;
         bottom: 0px;
+
+        @media (max-width: 900px) {
+            position: relative;
+            right: auto;
+            width: 100%;
+        }
     }
 }

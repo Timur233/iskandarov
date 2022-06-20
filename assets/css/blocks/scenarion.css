@@ -1,0 +1,15 @@
+.scenarion__title {
+  color: #333; }
+
+.scenario__img {
+  width: 586px;
+  position: absolute;
+  left: 50%;
+  top: -124px; }
+  @media (max-width: 900px) {
+    .scenario__img {
+      position: relative;
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      margin-bottom: 40px; } }

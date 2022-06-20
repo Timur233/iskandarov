@@ -15,3 +15,11 @@
         margin: auto;
     }
 }
+
+.preview {
+    & .title-ribbon {
+        @media (max-width: 768px) {
+            width: 90%;
+        }
+    }
+}
