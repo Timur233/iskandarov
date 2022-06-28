@@ -10,6 +10,10 @@
             font-weight: 600;
             text-align: left;
             color: #f1ca36;
+
+            @media (max-width: 520px) {
+                text-align: center;
+            }
         }
 
         &--right {
@@ -29,6 +33,10 @@
     &__content-footer {
         display: flex;
         align-items: center;
+
+        @media (max-width: 520px) {
+            flex-direction: column;
+        }
     }
 
     &__audio-block {

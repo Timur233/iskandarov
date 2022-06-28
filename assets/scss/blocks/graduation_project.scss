@@ -109,7 +109,12 @@
             bottom: 0;
             z-index: 6;
             transition: opacity $slow-animation;
-            background: rgba(247, 245, 238, .6)
+            background: rgba(247, 245, 238, .6);
+
+            @media (max-width: 512px) {
+                display: none;
+            }
+
         }
     }
 

@@ -8,6 +8,9 @@
       font-weight: 600;
       text-align: left;
       color: #f1ca36; }
+      @media (max-width: 520px) {
+        .divine-signal__content--left {
+          text-align: center; } }
     .divine-signal__content--right {
       flex: 0 0 30%; }
       .divine-signal__content--right img {
@@ -18,6 +21,9 @@
   .divine-signal__content-footer {
     display: flex;
     align-items: center; }
+    @media (max-width: 520px) {
+      .divine-signal__content-footer {
+        flex-direction: column; } }
   .divine-signal__audio-block {
     margin: spacer(8) 0; }
 
